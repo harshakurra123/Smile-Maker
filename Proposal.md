@@ -19,6 +19,11 @@
     - UI pages for all the screens.
     - API's for implementing functionalities.
     - Test views for code complexity.
+- Sprint 3
+    - Code reviews and code refactoring.
+    - Test cases for all the api's.
+    - Integrate backend api's with frontend pages.
+    - Manual tests after integration(Both backend and frontend).
 
 
 - Schedule & sprints are set by the GDP semesters (about every 2-weeks = a sprint)

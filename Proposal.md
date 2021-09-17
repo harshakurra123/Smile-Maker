@@ -1,8 +1,16 @@
+### Proposal for smile maker application
+- Smile maker application is an entertainment app, in which user can browse the jokes. Home page shows joke after every refresh. If user wants list of jokes, we provide button on home page to direct to list of jokes. 
+- Authentication is required for user to post or edit the content in the joke.
+- Application is developed in python with Django framework using postgresql as database.
+- Application uses Restful api’s for serving the data.
+
+
 ### Project Title
 Smile Maker
 - Schedule & sprints are set by the GDP semesters (about every 2-weeks = a sprint)
 - Budget is set by the size of the development team * average expected hours per developer per week
 - Scope of work should be clearly divided into sprint buckets of time
+
 
 ### Team Members
 1. Harshavardhan Kurra

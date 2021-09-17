@@ -6,7 +6,17 @@
 
 
 ### Project Title
-Smile Maker
+- Smile Maker
+
+### Schedule & Sprints for the application development
+- Sprint 1
+    - Gather all the requirements for developement.
+    - Design sketches for UI pages.
+    - Setup for the backend development.
+    - Decide the tables for the Database Design.
+
+
+
 - Schedule & sprints are set by the GDP semesters (about every 2-weeks = a sprint)
 - Budget is set by the size of the development team * average expected hours per developer per week
 - Scope of work should be clearly divided into sprint buckets of time

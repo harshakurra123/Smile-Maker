@@ -14,7 +14,11 @@
     - Design sketches for UI pages.
     - Setup for the backend development.
     - Decide the tables for the Database Design.
-
+- Sprint 2
+    - Models for the Database.
+    - UI pages for all the screens.
+    - API's for implementing functionalities.
+    - Test views for code complexity.
 
 
 - Schedule & sprints are set by the GDP semesters (about every 2-weeks = a sprint)

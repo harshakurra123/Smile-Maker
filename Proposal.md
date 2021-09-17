@@ -24,6 +24,11 @@
     - Test cases for all the api's.
     - Integrate backend api's with frontend pages.
     - Manual tests after integration(Both backend and frontend).
+- Spring 4
+    - Deployment setup for the application.
+    - Host application in the browser.
+    - Release application for the first time.
+    - Review application for the final time.
 
 
 - Schedule & sprints are set by the GDP semesters (about every 2-weeks = a sprint)

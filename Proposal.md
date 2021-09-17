@@ -35,6 +35,12 @@
 - Budget is set by the size of the development team * average expected hours per developer per week
 - Scope of work should be clearly divided into sprint buckets of time
 
+### Budget
+| Team Member                   | Cost per hour | Cost per week | Email                  |
+| ----------------------------- | ------------- | ------------- | ---------------------- |
+| Harshavardhan Kurra           | 30$           | 1200$         | s542409@nwmissouri.edu |
+| Hemanth Venkata Reddy Telluri | 30$           | 1200$         | s542393@nwmissouri.edu |
+
 
 ### Team Members
 1. Harshavardhan Kurra

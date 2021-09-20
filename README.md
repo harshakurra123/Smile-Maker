@@ -5,5 +5,5 @@
 - Application is developed in python with Django framework using postgresql as database.
 - Application uses Restful api’s for serving the data.
 
-[Link to rfp](https://github.com/giridhar196/smile-maker/blob/main/rfp.md)
+[Link to rfp](https://github.com/giridhar196/smile-maker/blob/main/rfp.md)<br>
 [Proposal link](https://github.com/harshakurra123/Smile-Maker/blob/main/Proposal.md)

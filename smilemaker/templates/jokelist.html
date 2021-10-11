@@ -1,0 +1,15 @@
+  <h1>Jokebook</h1>
+  {% for i in data %}
+  <ul>
+    <li><strong>Title</strong> {{ i.joke_title }}</li>
+    <li><strong>Description</strong> {{ i.joke_description }}</li>
+    <li><strong>Author</strong> {{ i.joke_user }}</li>
+  </ul>
+  {% endfor %}
+
+  <!-- <form action="jokeRandom" method='GET'>
+    <button type='submit'> Back</button>
+  </form> -->
+
+
+  <input type=button value="Go Back" onClick="javascript:history.go(-1);">

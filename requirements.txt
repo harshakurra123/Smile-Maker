@@ -3,6 +3,7 @@ backports.entry-points-selectable==1.1.0
 distlib==0.3.3
 Django==3.2.8
 django-cors-headers==3.10.0
+django-heroku==0.3.1
 django-filter==21.1
 djangorestframework==3.12.4
 filelock==3.3.0

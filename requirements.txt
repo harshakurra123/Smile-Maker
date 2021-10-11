@@ -5,7 +5,7 @@ Django==3.2.8
 django-filter==21.1
 djangorestframework==3.12.4
 django-cors-headers==3.10.0
-heroku=0.1.4
+heroku==0.1.4
 django-heroku==0.3.1
 filelock==3.3.0
 importlib-metadata==4.8.1

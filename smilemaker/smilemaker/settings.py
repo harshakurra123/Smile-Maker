@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$awp4fz*32673$#d&9ah9ix3+cqcg64)4k!eb$b-8b_r#=e#lm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['smilemakerheroku.herokuapp.com','127.0.0.1', 'https://smilemakerheroku.herokuapp.com']
+ALLOWED_HOSTS = ['smilemakerheroku.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -167,7 +167,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 
 STATIC_URL = '/static/'
-
+django_heroku.settings(locals())
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

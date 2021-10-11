@@ -1,0 +1,1 @@
+web: gunicorn smilemaker.smilemaker.wsgi --log-file -

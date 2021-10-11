@@ -1,1 +1,0 @@
-web: gunicorn Smile-maker.smilemaker.smilemaker.wsgi

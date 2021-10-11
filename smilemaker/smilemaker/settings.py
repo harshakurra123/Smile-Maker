@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$awp4fz*32673$#d&9ah9ix3+cqcg64)4k!eb$b-8b_r#=e#lm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['smilemakerheroku.herokuapp.com']
+ALLOWED_HOSTS = ['smilemakerheroku.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'smilemakerapp',
-    'rest_framework'
+    'rest_framework',
+    'corsheaders'
 ]
 
 # REST_FRAMEWORK = {
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

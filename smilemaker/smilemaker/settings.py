@@ -23,9 +23,9 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'django-insecure-$awp4fz*32673$#d&9ah9ix3+cqcg64)4k!eb$b-8b_r#=e#lm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['smilemakerheroku.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['https://smilemakerheroku.herokuapp.com','smilemakerheroku.herokuapp.com','127.0.0.1']
 
 
 # Application definition

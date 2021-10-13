@@ -39,7 +39,6 @@ def jokeRandom(request):
     """
     joke_record = Joke.objects.order_by('?').first()
     context = JokeSerializer(joke_record).data
-    print(context)
     return render(request, 'index.html', context)
 
 def reverse(request):

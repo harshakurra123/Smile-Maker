@@ -9,6 +9,7 @@ class Joke(models.Model):
    joke_description = models.CharField(max_length = 500, blank=True)
    joke_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="joke_user")
    joke_likes = models.ManyToManyField(User)
+   joke_image_base64 = models.TextField(blank=True)
 
    class Meta:
       db_table = "joke"

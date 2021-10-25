@@ -54,4 +54,17 @@ class JokeList(APIView):
         jokes_serializer = JokeSerializer(jokes_records, many=True).data
         return Response(jokes_serializer, status=200)
 
+
+class JokeCreate(APIView):
+    """
+    JokeCreate
+    """
+    def post(self, request):
+        joke_instance = Joke()
+        joke_instance.joke_title = request.data.get("joke_title")
+        joke_instance.joke_description = request.data.get("joke_description")
+        joke_instance.save()
+        return Response({"status":"Joke created successfully"}, status=200)
+
+
         

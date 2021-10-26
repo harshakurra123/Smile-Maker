@@ -43,11 +43,12 @@
 
 
 ### Team Members
-1. Harshavardhan Kurra
-2. Hemanth Venkata Reddy Telluri
+1. Harshavardhan Kurra - Backend Development
+2. Hemanth Venkata Reddy Telluri - Frontend Development
 
 ## Entity Relationship Diagram
 ![ER Diagram](static/gdp-erdiagram.jpg)
+
 
 ### Technology Stack
 - Backend language + framework: Python, Django

@@ -61,3 +61,6 @@
 - Front-end page plan: server-side views
 - Front-end responsive design: Bootstrap
 
+## References
+- <https://docs.djangoproject.com/en/3.2/intro/tutorial01/> 
+- <https://www.django-rest-framework.org/tutorial/quickstart/>

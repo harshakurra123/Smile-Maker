@@ -51,6 +51,9 @@
 - User adds the jokes by entering joke_title, joke_description. Joke data is stored in joke table with logged in user_id
 - User can browse jokes and like them, likes of users are stored in joke_likes.
 
+## Screen Sketches
+![sketches](static/sketches.jpg)
+
 ### Technology Stack
 - Backend language + framework: Python, Django
 - Backend free app host: Heroku

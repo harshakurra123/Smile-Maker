@@ -46,6 +46,8 @@
 1. Harshavardhan Kurra
 2. Hemanth Venkata Reddy Telluri
 
+## Entity Relationship Diagram
+![ER Diagram](static/gdp-erdiagram.jpg)
 
 ### Technology Stack
 - Backend language + framework: Python, Django
@@ -53,3 +55,4 @@
 - Data host + type: Postgresql
 - Front-end page plan: server-side views
 - Front-end responsive design: Bootstrap
+

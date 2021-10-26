@@ -38,8 +38,8 @@
 ### Budget
 | Team Member                   | Cost per hour | Cost per week | Total Budget(Total weeks * Cost per week) | Email                  |
 | ----------------------------- | ------------- | ------------- | ------------ |----------------------- |
-| Harshavardhan Kurra           | 30$           | 1200$         | 9600$        | s542409@nwmissouri.edu |
-| Hemanth Venkata Reddy Telluri | 30$           | 1200$         | 9600$        | s542393@nwmissouri.edu |
+| Harshavardhan Kurra           | 30$           | 1200$         | 19200$       | s542409@nwmissouri.edu |
+| Hemanth Venkata Reddy Telluri | 30$           | 1200$         | 19200$       | s542393@nwmissouri.edu |
 
 
 ### Team Members

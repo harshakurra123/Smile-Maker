@@ -1,49 +1,35 @@
-
-  <!-- <form action="jokeRandom" method='GET'>
-    <button type='submit'> Back</button>
-  </form> -->
+<input type=button value="Go Back" onClick="javascript:history.go(-1);">
 
 
-  <input type=button value="Go Back" onClick="javascript:history.go(-1);">
 
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- <h1>Jokebook</h1>
- 
-  <ul>
-    <li><strong>Title</strong> {{ joke_title }}</li>
-    <li><strong>Description</strong> {{ joke_description }}</li>
-    <li><strong>Author</strong> {{ joke_user }}</li>
-  </ul> -->
-  
-  <!-- <form action='jokelist' method='GET'>
-    <button type='submit'> See More</button>
-    </form> -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <title>Bootstrap Example</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-      <div class="card text-center">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="card text-center">
         <div class="card-header">
-          <ul class="nav nav-pills card-header-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Jokes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">about</a>
-            </li>
-            
-          </ul>
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jokes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">about</a>
+                </li>
+
+            </ul>
         </div>
         {% for i in data %}
         <div class="card" style="display: flex;
@@ -56,15 +42,15 @@
         right: 30%;
         height: 200px;
         border: 3px solid green;">
-          <h5 class="card-title">{{ i.joke_title }}</h5>
-          <p class="card-text">{{ i.joke_description }}</p>
-          <form action='jokelist' method='GET'>
-            <button class="btn btn-primary" type='submit'> See More</button>
-          </form>
+            <h5 class="card-title">{{ i.joke_title }}</h5>
+            <p class="card-text">{{ i.joke_description }}</p>
+            <form action='jokelist' method='GET'>
+                <button class="btn btn-primary" type='submit'> See More</button>
+            </form>
         </div>
         {% endfor %}
-      </div>
-    
-    </body>
-    </html>
-    
+    </div>
+
+</body>
+
+</html>

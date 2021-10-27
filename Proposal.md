@@ -36,16 +36,23 @@
 - Scope of work should be clearly divided into sprint buckets of time
 
 ### Budget
-| Team Member                   | Cost per hour | Cost per week | Email                  |
-| ----------------------------- | ------------- | ------------- | ---------------------- |
-| Harshavardhan Kurra           | 30$           | 1200$         | s542409@nwmissouri.edu |
-| Hemanth Venkata Reddy Telluri | 30$           | 1200$         | s542393@nwmissouri.edu |
+| Team Member                   | Cost per hour | Cost per week | Total Budget(Total weeks * Cost per week) | Email                  |
+| ----------------------------- | ------------- | ------------- | ------------ |----------------------- |
+| Harshavardhan Kurra           | 30$           | 1200$         | 19200$       | s542409@nwmissouri.edu |
+| Hemanth Venkata Reddy Telluri | 30$           | 1200$         | 19200$       | s542393@nwmissouri.edu |
 
 
 ### Team Members
-1. Harshavardhan Kurra
-2. Hemanth Venkata Reddy Telluri
+1. Harshavardhan Kurra - Backend Development
+2. Hemanth Venkata Reddy Telluri - Frontend Development
 
+## Entity Relationship Diagram
+![ER Diagram](static/gdp-erdiagram.jpg)
+- User adds the jokes by entering joke_title, joke_description. Joke data is stored in joke table with logged in user_id
+- User can browse jokes and like them, likes of users are stored in joke_likes.
+
+## Screen Sketches
+![sketches](static/sketches.jpg)
 
 ### Technology Stack
 - Backend language + framework: Python, Django
@@ -68,3 +75,6 @@
     }
 ]
 ```
+## References
+- <https://docs.djangoproject.com/en/3.2/intro/tutorial01/> 
+- <https://www.django-rest-framework.org/tutorial/quickstart/>

@@ -61,6 +61,18 @@
 - Front-end page plan: server-side views
 - Front-end responsive design: Bootstrap
 
+
+### User Stories
+1. User can browse through the joke.
+2. User clicks on SEE MORE button to see list of jokes.
+3. User can login to the application.
+4. User can add a joke.
+5. User can edit a joke.
+6. User can like or comment on jokes.
+
+
+
+
 ```
 [
     {

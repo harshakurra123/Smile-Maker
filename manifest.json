@@ -1,6 +1,6 @@
 {
-    "name": "Fact PWA",
-    "short_name": "Facts",
+    "name": "Smile Maker PWA",
+    "short_name": "Smile Maker",
     "scope": "/",
     "start_url": "/",
     "display": "standalone",

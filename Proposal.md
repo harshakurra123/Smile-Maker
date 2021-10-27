@@ -78,3 +78,6 @@
 ## References
 - <https://docs.djangoproject.com/en/3.2/intro/tutorial01/> 
 - <https://www.django-rest-framework.org/tutorial/quickstart/>
+
+## Client Approval
+![approval](static/approval.jpg)

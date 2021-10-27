@@ -53,3 +53,18 @@
 - Data host + type: Postgresql
 - Front-end page plan: server-side views
 - Front-end responsive design: Bootstrap
+
+```
+[
+    {
+        "joke_title": "MAKE ME A SANDWICH",
+        "joke_description": "My husband and I were daydreaming about what we would do if we won the lottery. I started: I’d hire a cook so that I could just say, ‘Hey, make me a sandwich!’ Thomas shook his head. Not me. I already have one of those.",
+        "joke_user": {}
+    },
+    {
+        "joke_title": "MADE MY OWN GRANDKIDS",
+        "joke_description": "With a patient in my medical exam room Me: How old are your kids? Patient: Forty-four and 39 from my wife who passed away, and from my second wife, 15 and 13. Me: That’s quite the age difference! Patient: Well, the older ones didn’t give me any grandkids, so I made my own.",
+        "joke_user": {}
+    }
+]
+```

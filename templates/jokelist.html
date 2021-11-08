@@ -6,7 +6,8 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>7A</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/harshakurra123/Smile-Maker/main/images/favicon.ico"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,6 +17,9 @@
 </head>
 
 <body>
+    
+
+
     <div class="card text-center">
         <div class="card-header">
             <ul class="nav nav-pills card-header-pills">
@@ -32,7 +36,19 @@
             </ul>
         </div>
         {% for i in data %}
-        <div class="card" style="display: flex;
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5" style="justify-content: center;">
+            <div class="col mb-4">
+              <div class="card">
+                <!-- <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">{{ i.joke_title }}</h5>
+                  <p class="card-text">{{ i.joke_description }}</p>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- <div class="card" style="display: flex;
         justify-content: center;
         align-items: center;
         width: 600pxn;
@@ -44,10 +60,8 @@
         border: 3px solid green;">
             <h5 class="card-title">{{ i.joke_title }}</h5>
             <p class="card-text">{{ i.joke_description }}</p>
-            <form action='jokelist' method='GET'>
-                <button class="btn btn-primary" type='submit'> See More</button>
-            </form>
-        </div>
+            
+        </div> -->
         {% endfor %}
     </div>
 

@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import serializers
 from django.contrib.auth.models import User
-
+from django.http import HttpResponse
 # Create your views here.
 
     
@@ -31,6 +31,14 @@ def jokelist(request):
     final_result = {}
     final_result["data"] = context
     return render(request, 'jokelist.html', final_result)
+
+def likepost(request):
+    joke_id = request.data.get("joke_id")
+    user_id = request.data.get("user_id")
+    joke_record = Joke.objects.get(id=user_id)
+    joke_record.joke_likes.add(user_id)
+    joke_record.save()
+    return HttpResponse('<h1>liked successfully</h1>')
 
 
 def jokeRandom(request):

@@ -7,5 +7,6 @@ urlpatterns = [
     path('jokelist/', views.jokelist, name='jokelist'),
     path('reverse/', views.reverse, name='reverse'),
     path('joke/', views.JokeList.as_view()),
+    path('login/', views.login, name='login'),
 
 ]

@@ -44,9 +44,19 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ joke_title }}</h5>
                         <p class="card-text">{{ joke_description }}</p>
+                        <form action='likepost' method='GET'>
+                            <button class="btn btn-primary" type='submit'> like</button>
+                        </form>
+                        {% if request.user.is_authenticated %}
+                            {# show button that trigger popup #}
+                        {% else %}
+                            {# show button that redirects to login page #}
+                        {% endif %}
+
                         <form action='jokelist' method='GET'>
                             <button class="btn btn-primary" type='submit'> See More</button>
                         </form>
+                        
                     </div>
                 </div>
             </div>

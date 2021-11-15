@@ -32,7 +32,15 @@ def jokelist(request):
     final_result["data"] = context
     return render(request, 'jokelist.html', final_result)
 
-
+def login(request):
+    """login."""
+    username=request.data.get("username")
+    password=request.data.get("password")
+    user = authenticate(username=username, password=password)
+    if user is not None:
+        return Response("user is authenticated")
+    else:
+        return Response("login error")
 
 
 def likepost(request):

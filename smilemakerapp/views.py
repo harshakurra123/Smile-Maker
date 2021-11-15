@@ -32,9 +32,7 @@ def jokelist(request):
     final_result["data"] = context
     return render(request, 'jokelist.html', final_result)
 
-def login(request):
-    finaldict = {}
-    return render(request, 'login.html', finaldict)
+
 
 
 def likepost(request):

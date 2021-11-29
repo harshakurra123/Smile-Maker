@@ -5,7 +5,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import redirect
 # Create your views here.
 
     
@@ -17,13 +18,14 @@ class UserSerializer(serializers.Serializer):
 
 
 class JokeSerializer(serializers.Serializer):
+    id = serializers.CharField()
     joke_title = serializers.CharField()
     joke_description = serializers.CharField()
     joke_user = UserSerializer()
 
     class Meta:
         model = Joke
-        fields = ['joke_title', 'joke_description', 'joke_user', 'joke_image_base64']
+        fields = ['id', 'joke_title', 'joke_description', 'joke_user', 'joke_image_base64']
 
 def jokelist(request):
     joke_record = Joke.objects.all()
@@ -34,13 +36,14 @@ def jokelist(request):
 
 def login(request):
     """login."""
-    username=request.data.get("username")
-    password=request.data.get("password")
-    user = authenticate(username=username, password=password)
-    if user is not None:
-        return Response("user is authenticated")
-    else:
-        return Response("login error")
+    return render(request, 'login.html', context={})
+    # username=request.data.get("username")
+    # password=request.data.get("password")
+    # user = authenticate(username=username, password=password)
+    # if user is not None:
+    #     return Response("user is authenticated")
+    # else:
+    #     return Response("login error")
 
 
 def likepost(request):
@@ -58,11 +61,31 @@ def jokeRandom(request):
     """
     joke_record = Joke.objects.order_by('?').first()
     context = JokeSerializer(joke_record).data
+    print(context)
     return render(request, 'index.html', context)
 
 def reverse(request):
     return redirect('')
 
+
+def addjoke(request):
+    """
+    addjoke
+    """
+    return render(request, 'addjoke.html', context={})
+
+def jokestatus(request):
+    """jokestatus"""
+    if request.method=="POST":
+        print(request)
+        title = request.POST.get("title")
+        description = request.POST.get("description")
+        joke_instance = Joke()
+        joke_instance.joke_title = title
+        joke_instance.joke_description = description
+        joke_instance.joke_user_id = 1
+        joke_instance.save()
+        return redirect('/')
 
 class JokeList(APIView):
     """
